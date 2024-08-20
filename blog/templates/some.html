@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARMAX</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='file.css') }}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="heading">
+            <p><strong class="logo">X</strong>-car</p>
+            <input type="textbox" placeholder="Search">
+            <img class="menu" src="{{ url_for('static', filename='profile_pics/default.jpg') }}" alt="">
+            <img class="login" src= "{{ url_for('static', filename='profile_pics/png-transparent-default-avatar-thumbnail.png') }}" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><strong>Home</strong></a></li>
+                <li><a href="shop new.html">Shop New</a></li>
+                <li><a href="appraise.html">Appraise my</a></li>
+                <li><a href="shop used.html">Shop Used</a></li>
+            </ul>
+        </nav>
+    </div>    
+    
+<div class="container">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <div class="wrappers" >
+            <label  for="label">Surname</label>
+            <input class="textbox" textbox required> 
+            <br>
+            <label for="label">First Name</label>
+            <input class="textbox" type="textbox" required> 
+            <br>
+            <label for="label">Other Name</label>
+            <input class="textbox" type="textbox" required>
+            <br>
+            <label for="label">Phone Number</label>
+            <input class="textbox" type="textbox" required>
+            <br>      
+            <label for="label">Email</label>
+            <input class="textbox" type="textbox" required>
+            <br>
+            <label for="label">Gender</label>
+            <select class="textbox" name="label" id="label" required>
+                <option value="i">   </option>
+                <option value="i">Male</option>
+                <option value="i">Female</option>
+            </select>
+            <br>
+            <label for="label">Date of Birth</label>
+            <input class="textbox" type="date" required>
+            
+            </select>
+            <br>
+            <label for="label">Nationality</label>
+            <input class="textbox" type="textbox" required>
+            <br>
+            <label for="label">Address</label>
+            <input class="textbox" type="textbox" required>
+            <br>
+            <label for="label">State of Origin</label>
+            <input  class="textbox"type="textbox" required>
+            <br>
+            <label for="label">LGA</label>
+            <input class="textbox" type="textbox" required>
+            <br>
+            </div>
+    </fieldset>
+
+        <fieldset>
+            <legend>Account Credentials</legend>
+            <div class="wrappers" >
+            <label for="label">Username</label>
+            <input class="textbox" type="textbox" required>
+            <br>
+            <label for="label">Password</label>
+            <input class="textbox" type="textbox" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Eligibility (Driver's License)</legend>
+            <div class="wrappers">
+            <label for="label">Driver's License No</label>
+            <input class="textbox" type="textbox" required>
+            <br>
+            <label for="label">Expiration Date</label>
+            <input class="textbox" type="date" required>
+            <br>
+            <label for="label">Issuing State</label>
+            <input class="textbox" type="textbox" required>
+            <br>
+            </div>
+        </fieldset>
+    </div>
+</body>
+</html>
